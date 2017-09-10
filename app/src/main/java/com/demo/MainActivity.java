@@ -9,6 +9,8 @@ import android.widget.FrameLayout;
 import android.widget.LinearLayout;
 import android.widget.Toast;
 
+import com.demo.dagger.component.activity.DaggerMainActivityComponent;
+import com.demo.dagger.module.activity.MainActivityModule;
 import com.demo.presenter.activity.MainActivityPresenter;
 import com.demo.ui.fragment.HomeFragment;
 import com.demo.ui.fragment.MoreFragment;
@@ -35,6 +37,7 @@ public class MainActivity extends FragmentActivity {
     private int childCount;
     private ArrayList<Fragment> framents = new ArrayList<>();
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -42,6 +45,13 @@ public class MainActivity extends FragmentActivity {
         ButterKnife.inject(this);
         setListener();
         init();
+        DaggerMainActivityComponent mDaggerMainActivityComponent =
+                (DaggerMainActivityComponent) DaggerMainActivityComponent
+                        .builder()
+                        .mainActivityModule(new MainActivityModule(this))
+                        .build();
+        mDaggerMainActivityComponent.in(this);
+
     }
 
     private void init() {
@@ -56,7 +66,7 @@ public class MainActivity extends FragmentActivity {
     private void changefragment(int dex) {
         getSupportFragmentManager()
                 .beginTransaction()
-                .replace(R.id.center,framents.get(dex),""+dex)
+                .replace(R.id.center, framents.get(dex), "" + dex)
                 .commit();
     }
 
@@ -79,7 +89,7 @@ public class MainActivity extends FragmentActivity {
     };
 
     private void changeUi(int dex) {
-        Toast.makeText(this,""+dex,Toast.LENGTH_SHORT).show();
+        Toast.makeText(this, "" + dex, Toast.LENGTH_SHORT).show();
         for (int i = 0; i < childCount; i++) {
             if (i == dex) {
 //                bottom.getChildAt(i).setEnabled(false);
@@ -101,8 +111,8 @@ public class MainActivity extends FragmentActivity {
         item.setEnabled(b);
         if (item instanceof ViewGroup) {
             int count = ((ViewGroup) item).getChildCount();
-            for (int i = 0 ;i<count;i++) {
-                setEnables(((ViewGroup) item).getChildAt(i),b);
+            for (int i = 0; i < count; i++) {
+                setEnables(((ViewGroup) item).getChildAt(i), b);
             }
         }
     }
