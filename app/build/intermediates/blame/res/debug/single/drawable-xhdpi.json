@@ -1,0 +1,34 @@
+[
+    {
+        "merged": "C:\\Users\\jasmine\\Desktop\\DemoWai\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\more_enable.png",
+        "source": "C:\\Users\\jasmine\\Desktop\\DemoWai\\app\\src\\main\\res\\drawable-xhdpi\\more_enable.png"
+    },
+    {
+        "merged": "C:\\Users\\jasmine\\Desktop\\DemoWai\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\home_nomal.png",
+        "source": "C:\\Users\\jasmine\\Desktop\\DemoWai\\app\\src\\main\\res\\drawable-xhdpi\\home_nomal.png"
+    },
+    {
+        "merged": "C:\\Users\\jasmine\\Desktop\\DemoWai\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\person_nomal.png",
+        "source": "C:\\Users\\jasmine\\Desktop\\DemoWai\\app\\src\\main\\res\\drawable-xhdpi\\person_nomal.png"
+    },
+    {
+        "merged": "C:\\Users\\jasmine\\Desktop\\DemoWai\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\order_enable.png",
+        "source": "C:\\Users\\jasmine\\Desktop\\DemoWai\\app\\src\\main\\res\\drawable-xhdpi\\order_enable.png"
+    },
+    {
+        "merged": "C:\\Users\\jasmine\\Desktop\\DemoWai\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\home_enable.png",
+        "source": "C:\\Users\\jasmine\\Desktop\\DemoWai\\app\\src\\main\\res\\drawable-xhdpi\\home_enable.png"
+    },
+    {
+        "merged": "C:\\Users\\jasmine\\Desktop\\DemoWai\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\more_nomal.png",
+        "source": "C:\\Users\\jasmine\\Desktop\\DemoWai\\app\\src\\main\\res\\drawable-xhdpi\\more_nomal.png"
+    },
+    {
+        "merged": "C:\\Users\\jasmine\\Desktop\\DemoWai\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\order_nomal.png",
+        "source": "C:\\Users\\jasmine\\Desktop\\DemoWai\\app\\src\\main\\res\\drawable-xhdpi\\order_nomal.png"
+    },
+    {
+        "merged": "C:\\Users\\jasmine\\Desktop\\DemoWai\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\person_enable.png",
+        "source": "C:\\Users\\jasmine\\Desktop\\DemoWai\\app\\src\\main\\res\\drawable-xhdpi\\person_enable.png"
+    }
+]

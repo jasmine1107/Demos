@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">DemoWai</string>
+    <string name="home">主页</string>
+    <string name="more">更多</string>
+    <string name="person">个人中心</string>
+    <string name="order">订单</string>
 </resources>
